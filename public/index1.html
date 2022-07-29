@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>NGN-ISP</title>
+  
+
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <script src="./student.js"></script>
+  <script src="./navigation.js"></script>
+  <script type="text/javascript" src="./students.json">
+    // let myData = JSON.parse(students)
+    // localStorage.setItem('students',JSON.stringify(myData))
+    // console.log('myData: ',myData)
+  </script>
+  <body onload="renderListStudent()">
+    <form>
+      <input type = "button" value = "Redirect Me" onclick = "gotoPage0();" />
+   </form>
+    <div class="form-student">
+      <h3>Nhập Thông tin sinh viên</h3>
+      <label>Họ và tên</label>
+      <input type="text" id="fullName">
+      <br/>
+      <label>Email</label>
+      <input type="text" id="email">
+      <br/>
+      <label>Số điện thoại</label>
+      <input type="text" id="phone">
+      <br/>
+      <label>Địa chỉ</label>
+      <input type="text" id="address">
+      <br/>
+      <label>Giới tính</label>
+      <input type="radio" name="gender" id="male" value="1">Nam
+      <input type="radio" name="gender" id="famale" value="2">Nữ
+      <br/>
+      <label>&nbsp;</label>
+      <button onclick="save()">Lưu lại</button>
+    </div>
+    <div class="list-student">
+      <h3>Danh sách thông tin sinh viên</h3>
+      <center class="fire">🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥</center>
+      <br/>
+      <table id="table-content" width="750" border="1" cellpasdding="0" cellpasdding="0">
+
+        <tr>
+          <td>#</td>
+          <td>Họ và tên</td>
+          <td>Email</td>
+          <td>Số điện thoại</td>
+          <td>Địa chỉ</td>
+          <td>Giới tính</td>
+          <td>Hành động</td>
+        </tr>
+      </table>
+    </div>
+    <div class="edit-student" id="editStudent">
+      <h3 id="editStt">Sửa thông tin sinh viên &nbsp;</h3>
+      <label>Họ và tên</label>
+      <input type="text" id="editFullName">
+      <br/>
+      <label>Email</label>
+      <input type="text" id="editEmail">
+      <br/>
+      <label>Số điện thoại</label>
+      <input type="text" id="editPhone">
+      <br/>
+      <label>Địa chỉ</label>
+      <input type="text" id="editAddress">
+      <br/>
+      <label>Giới tính</label>
+      <input type="radio" name="gender" id="editMale" value="1">Nam
+      <input type="radio" name="gender" id="editFamale" value="2">Nữ
+      <br/>
+      <label>&nbsp;</label>
+      <button onclick="saveEditStudent()">Lưu lại</button>
+    </div>
+  </body>
+</html>
+
+ <!-- <script type="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.3/firebase-app.js";
+      import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.6.3/firebase-analytics.js";
+      
+      const firebaseConfig = {
+        apiKey: "AIzaSyBe92kwlOF3FCYUQPvfD2ivOzioaNeZ6vs",
+        authDomain: "qlsv-338416.firebaseapp.com",
+        projectId: "qlsv-338416",
+        storageBucket: "qlsv-338416.appspot.com",
+        messagingSenderId: "640956295407",
+        appId: "1:640956295407:web:9390d72efc28da373bd31a",
+        measurementId: "G-09RWY6776V"
+      };
+    
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+      const analytics = getAnalytics(app);
+    </scrip> -->
