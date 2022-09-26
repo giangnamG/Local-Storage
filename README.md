@@ -1,6 +1,6 @@
 # firebaseProject
 
 https://ngnispclub.web.app/
-Firsts web deploy
-Use hosting at Firebase
-Use database is Local Storage
+Firsts web deploy,
+Using host at Firebase,
+Using database is Local Storage
